@@ -22,6 +22,8 @@ documentation).
 **What it does:** This script uses timeanddate.com to scrape weather information (high and low temperatures) from Birmingham, AL
 from four observations on each day of 2019. After the scrape, the script saves weather data to a .csv file in the same path as the script.
 
+**Output data file:** bham_weather_2019.csv 
+
 **Modules used:** urllib, BeautifulSoup, selenium, os. 
 
 **What I learned:** This was my first time using selenium. I incorporated selenium because the page was loading too slowly, causing bs4
@@ -35,6 +37,8 @@ based on CSS attributes.
 
 **What it does:** This script scrapes NHL leaderboard data (player name, team, position, goals, assissts, points, etc.) from ESPN.com. 
  After the scrape, the script saves weather data to a .csv file in the same path as the script.
+
+**Output data file:** nhl_leaders.csv 
 
 **Modules used:** urllib, BeautifulSoup, os
 
