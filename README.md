@@ -5,7 +5,8 @@ individual project folders to view each script.
 
 
 ## Scrape the current weather
-### get_weather.py
+### Folder: weather_app
+### Scrape file: get_weather.py
 **What it does:** This script runs from the command window. It prompts the user for a U.S. city name and returns the city's current temperature.
 The script does not assume valid input. 
 
@@ -17,7 +18,8 @@ documentation).
 ---
 
 ## Scrape daily weather details from each day of 2019 in a list of cities
-### city_weather_scrape_2019.py
+### Folder: alabama_weather
+### Scrape File: city_weather_scrape.py
 
 **What it does:** This script uses timeanddate.com to scrape weather information (high and low temperatures) from a list of cities
 from four observations on each day of 2019. After the scrape, the script saves weather data to a .csv file in the same path as the script.
@@ -32,12 +34,13 @@ based on CSS attributes.
 
 **Bonus:** The repository contains an R script that will tidy the output data file and create a ridgeline plot grouped by city. See example figure below:
 
-<img href='/alabama_weather/compare_weather.png' style='width:50%'>
+<img src='/alabama_weather/compare_weather.png' width=60%>
 
 ---
 
 ## Scrape the NHL leaderboard
-### nhl_scrape.py
+### Folder: nhl_scrape
+### Scrape file: nhl_scrape.py
 
 **What it does:** This script scrapes NHL leaderboard data (player name, team, position, goals, assissts, points, etc.) from ESPN.com. 
  After the scrape, the script saves weather data to a .csv file in the same path as the script.
