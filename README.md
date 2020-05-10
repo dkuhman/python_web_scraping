@@ -16,19 +16,23 @@ documentation).
 
 ---
 
-## Scrape daily weather details from each day of 2019 in Birmingham, AL
-### alabama_weather_scrape.py
+## Scrape daily weather details from each day of 2019 in a list of cities
+### city_weather_scrape_2019.py
 
-**What it does:** This script uses timeanddate.com to scrape weather information (high and low temperatures) from Birmingham, AL
+**What it does:** This script uses timeanddate.com to scrape weather information (high and low temperatures) from a list of cities
 from four observations on each day of 2019. After the scrape, the script saves weather data to a .csv file in the same path as the script.
 
-**Output data file:** bham_weather_2019.csv 
+**Output data file:** city_weather_2019.csv 
 
 **Modules used:** urllib, BeautifulSoup, selenium, os. 
 
 **What I learned:** This was my first time using selenium. I incorporated selenium because the page was loading too slowly, causing bs4
 to miss the divs needed for the scrape (likely due to slow javascript code). This was also my first time running conditional statements 
 based on CSS attributes. 
+
+**Bonus:** The repository contains an R script that will tidy the output data file and create a ridgeline plot grouped by city. See example figure below:
+
+<img href='/alabama_weather/compare_weather.png' style='width:50%'>
 
 ---
 
