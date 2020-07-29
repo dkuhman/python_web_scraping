@@ -34,7 +34,7 @@ based on CSS attributes.
 
 **Bonus:** The repository contains an R script that will tidy the output data file and create a ridgeline plot grouped by city. See example figure below:
 
-<img src='/alabama_weather/compare_weather.png' width=60%>
+<img src='/weather_scraper/compare_weather.png' width=60%>
 
 ---
 
