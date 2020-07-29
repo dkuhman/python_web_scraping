@@ -7,10 +7,12 @@ library('tidyverse')
 library("ggplot2")
 library('ggjoy')
 
-rm(list=ls())
+rm(list = ls())
 
-#Load data
-mydata<-read.csv('C:/Users/danielkuhman/Google Drive/Python/python_web_scraping/alabama_weather/city_weather_2019.csv')
+#Load data - point to cit_weather_2019.csv
+mydata_path <- file.choose(new = FALSE)
+mydata <- read.csv(mydata_path)
+rm(mydata_path)
 
 #Prep Data
 mydata<-mydata %>% 
@@ -59,9 +61,3 @@ ggplot(mydata, aes(y=Month, x=temp_high3))+
     legend.title = element_text(size = 18, color = 'black', face = 'bold'),
     legend.text = element_text(size = 18, color = 'black')
   )
-
-
-
-
-
-
